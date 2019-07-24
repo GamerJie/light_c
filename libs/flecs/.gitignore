@@ -1,0 +1,5 @@
+.DS_Store
+bin
+.bake_cache
+.vscode
+gcov
