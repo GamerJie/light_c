@@ -1,0 +1,12 @@
+[submodule "libs/flecs"]
+	path = libs/flecs
+	url = https://github.com/SanderMertens/flecs.git
+[submodule "libs/sdl2"]
+	path = libs/sdl2
+	url = https://github.com/spurious/SDL-mirror.git
+[submodule "libs/jsmn"]
+	path = libs/jsmn
+	url = https://github.com/zserge/jsmn.git
+[submodule "libs/luajit"]
+	path = libs/luajit
+	url = https://github.com/LuaDist/luajit.git

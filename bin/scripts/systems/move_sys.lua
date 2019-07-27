@@ -21,14 +21,12 @@ function init()
 end
 
 function update(rows)
-	local poss, count = column(rows, sizeof("pos"), 1)
-	local speeds = column(rows, sizeof("speed"), 2)
+	local speeds, count = column(rows, sizeof("speed"), 1)
 
 	for i = 0, count - 1 do
-		local pos = ffi.cast("pos*", poss)[i]
 		local speed = ffi.cast("speed*", speeds)[i]
 
-		-- print(pos.x, pos.y, speed.value, count)
+		-- print(speed.value, count)
 	end
 	-- print("==============")
 end

@@ -13,15 +13,20 @@ typedef enum {
     SYS_ERROR
 } SYS_STATE;
 
+
+
 CLASS(System,
     SYS_STATE status;
     struct lua_State* lua;
 
+	char* name;
+
     void (*process)(struct ecs_rows_t* rows);
 )
 
-int System_init(System* self, const char* file_name);
+int System_init(System* self, char* file_name);
 int System_update(System* self, struct ecs_rows_t* rows);
 void System_clean(System* self);
+
 
 #endif //LIGHT_SYSTEM_H

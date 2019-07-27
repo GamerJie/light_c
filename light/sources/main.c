@@ -1,13 +1,14 @@
 
-#include "app.h"
 
 #define DEBUG 1
 
-#ifdef WIN32
+#ifdef WIN323
 #ifdef DEBUG
 #pragma comment(linker, "/subsystem:windows /entry:mainCRTStartup")
 #endif
 #endif // WIN32
+
+#include "app.h"
 
 int main(int argc, char* argv[]) {
 	App app;
